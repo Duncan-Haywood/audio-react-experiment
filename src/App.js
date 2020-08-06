@@ -6,7 +6,7 @@ import './crickets-night.mp3'
 
 
 function App() {
-  // var sound = new Howl({
+  //var sound = new Howl({
   //   src: ['crickets-night.mp3'],
   //   autoplay: true,
   //   loop: true,
@@ -18,9 +18,6 @@ function App() {
   // sound.play();
   return (
     <div className="App">
-      // <script> src="../node_modules/howler/howler.js" </script>
-      // <script> var sound = new Howl({ src: ['crickets-night.mp3']}); </script>
-      // <script>sound.play()</script>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
