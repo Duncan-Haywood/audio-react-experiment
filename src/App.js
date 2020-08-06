@@ -1,10 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Howl } from 'howler'
+import './crickets-night.mp3'
+
 
 function App() {
+  // var sound = new Howl({
+  //   src: ['crickets-night.mp3'],
+  //   autoplay: true,
+  //   loop: true,
+  //   volume: 1.0,
+  //   onend: function() {
+  //     console.log('Finished!');
+  //   }
+  // })
+  // sound.play();
   return (
     <div className="App">
+      // <script> src="../node_modules/howler/howler.js" </script>
+      // <script> var sound = new Howl({ src: ['crickets-night.mp3']}); </script>
+      // <script>sound.play()</script>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
