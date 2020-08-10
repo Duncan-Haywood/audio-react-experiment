@@ -1,8 +1,8 @@
-const {Howl, Howler} = require('howler');
-import './crickets-night.mp3'
+const { Howl, Howler } = require('howler');
+const crickets = require('./crickets-night.mp3');
 
 var sound = new Howl({
-  src: ['crickets-night.mp3']
+  src: [crickets]
 });
 
 sound.play();
