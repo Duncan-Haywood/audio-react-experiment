@@ -6,10 +6,11 @@ import './App.css';
 import menuClickAduio from './sounds/menu-button-click.wav'
 import UIfx from 'uifx'
 
-const beep = new UIfx(menuClickAduio);
+
 
 class App extends React.Component {
-  playBeep = () => {beep.play(1.0)}
+  beep = new UIfx(menuClickAduio);
+  playBeep = () => {this.beep.play(1.0)}
 
   render() {
     return (
@@ -19,7 +20,7 @@ class App extends React.Component {
           <p>
             A React app for testing how to play audio.
           </p>
-          <button onClick={this.playBeep}>Play Crickets</button>
+          <button onClick={this.playBeep}>Make a Click</button>
         </header>
       </div>
     );
