@@ -1,23 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Howl } from 'howler'
-import './crickets-night.mp3'
+// import { Howl, Howler } from 'howler'
+// import cricketsAudio from './sounds/crickets-night.mp3'
+import menuClickAduio from './sounds/menu-button-click.wav'
+import UIfx from 'uifx'
 
+const beep = new UIfx(menuClickAduio);
 
 class App extends React.Component {
-  // var sound = new Howl({
-  //   src: ['crickets-night.mp3'],
-  //   autoplay: true,
-  //   loop: true,
-  //   volume: 1.0,
-  //   onend: function() {
-  //     console.log('Finished!');
-  //   }
-  // })
-  // componentDidMount() {
-  //   sound.play();
-  // }
+  playBeep = () => {beep.play(1.0)}
+
   render() {
     return (
       <div className="App">
@@ -26,6 +19,7 @@ class App extends React.Component {
           <p>
             A React app for testing how to play audio.
           </p>
+          <button onClick={this.playBeep}>Play Crickets</button>
         </header>
       </div>
     );
