@@ -1,3 +1,6 @@
+If you'd like to get this up and running on firebase, please reach out to me, and I can walk you through the process. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
